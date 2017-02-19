@@ -1,0 +1,21 @@
+<section class="todoapp">
+	<header class="header">
+		<h1><%= @leftover.name %></h1>
+		 <input class="new-todo" placeholder="Add a leftover..." autofocus="">
+	</header>
+
+	<section class="main">
+		<ul class="todo-list">
+			<% @leftover.foodgroups.each do |foodgroup| %>
+				<li>
+					<div class="view">
+						<label><%= foodgroup.description %></label>
+					</div>
+				</li>
+			<% end %>
+		</ul>
+	</section>
+
+	<footer class="footer">
+	</footer>
+</section>

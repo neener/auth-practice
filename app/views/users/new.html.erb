@@ -1,0 +1,8 @@
+<h1> signup! </h1>
+
+<%= form_for(@user) do |f| %>
+	<%= f.text_field :email, :placeholder => "Register with your email!!" %>
+	<%= f.text_field :password, :placeholder => "Choose a password!!" %>
+	<%= f.submit %>
+
+<% end %>
